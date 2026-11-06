@@ -22,4 +22,8 @@ if __name__ == "__main__":
     
     # 2. Запускаем вашего бота (bot.py)
     subprocess.run(["python", "bot.py"])
+
+    # 3. Держим главный поток живым, чтобы сервер не выключался
+    while True:
+        time.sleep(1)
   
